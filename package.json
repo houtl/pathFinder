@@ -1,0 +1,26 @@
+{
+  "name": "path_finder",
+  "version": "1.0.0",
+  "author": "Tianle",
+  "main": "build/pathFinder.js",
+  "typings": "build/pathFinder.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn build && yarn jest",
+    "build": "tsc --incremental -p tsconfig.json",
+    "finstall": "yarn clean && yarn install --no-cache && yarn build",
+    "start": "node build/pathFinder.js",
+    "startApi": "npx ts-node src/pathFinderApi.ts",
+    "clean": "rm -rf node_modules build tsconfig.tsbuildinfo yarn.lock coverage"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "express": "4.20.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.4",
+    "jest": "^29.7.0"
+  }
+}

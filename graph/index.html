@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Path Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #grid {
+            display: grid;
+            grid-gap: 5px;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .walkable {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+        .obstacle {
+            background-color: #000000;
+        }
+        .path {
+            background-color: #00f;
+        }
+        .start {
+            background-color: #0f0;
+        }
+        .end {
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="fileInput" accept=".json">
+    <div id="grid"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
